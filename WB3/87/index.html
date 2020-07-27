@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        
+		<span style="position: absolute; top: 332px; left: 110px">
+			<textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res1"></textarea>
+		</span>
+      <span style="position: absolute; top: 353px; left: 270px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res2"></textarea>
+		</span>
+      <span style="position: absolute; top: 417px; left: 112px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res3"></textarea>
+		</span>
+      <span style="position: absolute; top: 596px; left: 109px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res4"></textarea>
+		</span>
+      <span style="position: absolute; top: 596px; left: 351px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res5"></textarea>
+		</span>
+      <span style="position: absolute; top: 659px; left: 111px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res6"></textarea>
+		</span>
+      <span style="position: absolute; top: 754px; left: 161px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res7"></textarea>
+		</span>
+      <span style="position: absolute; top: 837px; left: 162px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res8"></textarea>
+		</span>
+      <span style="position: absolute; top: 859px; left: 163px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res9"></textarea>
+		</span>
+      <span style="position: absolute; top: 101px; left: 530px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res10"></textarea>
+		</span>
+      <span style="position: absolute; top: 164px; left: 532px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res11"></textarea>
+		</span>
+      <span style="position: absolute; top: 186px; left: 529px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res12"></textarea>
+		</span>
+      <span style="position: absolute; top: 417px; left: 529px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res13"></textarea>
+		</span>
+      <span style="position: absolute; top: 501px; left: 530px">
+	  <textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res14"></textarea>
+		</span>
+      <span style="position: absolute; top: 543px; left: 529px">
+			<textarea rows = "1" cols = "1" maxlength = "1" id="tup1_p87res15"></textarea>
+		</span>
+      
+      <span style="position: absolute; top: 806px; left: 473px">
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res16"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res17"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res18"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res19"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res20"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res21"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res22"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res23"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res24"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res25"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="tup1_p87res26"></textarea>
+		</span>
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1030px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Save"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Send" class="btn btn-primary"> 
+			<input type="hidden" id="tup1_regNA" name="tup1_regNA">
+			<input type="hidden" id="tup1_regGP" name="tup1_regGP">
+			<input type="hidden" id="tup1_regCA" name="tup1_regCA">
+			<input type="hidden" id="tup1_regND" name="tup1_regND">
+			<input type="hidden" id="tup1_regCD" name="tup1_regCD">
+		</form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1020px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('tup1_regNA').value = localStorage.getItem('tup1_regNA');
+    document.getElementById('tup1_regGP').value = localStorage.getItem('tup1_regGP');
+    document.getElementById('tup1_regCA').value = localStorage.getItem('tup1_regCA');
+    document.getElementById('tup1_regND').value = localStorage.getItem('tup1_regND');
+    document.getElementById('tup1_regCD').value = localStorage.getItem('tup1_regCD');
+
+	 document.getElementById('tup1_p87res1').value = localStorage.getItem('tup1_p87res1');
+    document.getElementById('tup1_p87res2').value = localStorage.getItem('tup1_p87res2');
+    document.getElementById('tup1_p87res3').value = localStorage.getItem('tup1_p87res3');
+    document.getElementById('tup1_p87res4').value = localStorage.getItem('tup1_p87res4');
+    document.getElementById('tup1_p87res5').value = localStorage.getItem('tup1_p87res5');
+    document.getElementById('tup1_p87res6').value = localStorage.getItem('tup1_p87res6');
+    document.getElementById('tup1_p87res7').value = localStorage.getItem('tup1_p87res7');
+    document.getElementById('tup1_p87res8').value = localStorage.getItem('tup1_p87res8');
+    document.getElementById('tup1_p87res9').value = localStorage.getItem('tup1_p87res9');
+    document.getElementById('tup1_p87res10').value = localStorage.getItem('tup1_p87res10');
+    document.getElementById('tup1_p87res11').value = localStorage.getItem('tup1_p87res11');
+    document.getElementById('tup1_p87res12').value = localStorage.getItem('tup1_p87res12');
+    document.getElementById('tup1_p87res13').value = localStorage.getItem('tup1_p87res13');
+    document.getElementById('tup1_p87res14').value = localStorage.getItem('tup1_p87res14');
+    document.getElementById('tup1_p87res15').value = localStorage.getItem('tup1_p87res15');
+    document.getElementById('tup1_p87res16').value = localStorage.getItem('tup1_p87res16');
+    document.getElementById('tup1_p87res17').value = localStorage.getItem('tup1_p87res17');
+    document.getElementById('tup1_p87res18').value = localStorage.getItem('tup1_p87res18');
+    document.getElementById('tup1_p87res19').value = localStorage.getItem('tup1_p87res19');
+    document.getElementById('tup1_p87res20').value = localStorage.getItem('tup1_p87res20');
+    document.getElementById('tup1_p87res21').value = localStorage.getItem('tup1_p87res21');
+    document.getElementById('tup1_p87res22').value = localStorage.getItem('tup1_p87res22');
+    document.getElementById('tup1_p87res23').value = localStorage.getItem('tup1_p87res23');
+    document.getElementById('tup1_p87res24').value = localStorage.getItem('tup1_p87res24');
+    document.getElementById('tup1_p87res25').value = localStorage.getItem('tup1_p87res25');
+    document.getElementById('tup1_p87res26').value = localStorage.getItem('tup1_p87res26');
+    
+
+    function save_data(){
+        var tup1_p87res1 = document.getElementById('tup1_p87res1').value;
+        localStorage.setItem('tup1_p87res1', tup1_p87res1);
+        var tup1_p87res2 = document.getElementById('tup1_p87res2').value;
+        localStorage.setItem('tup1_p87res2', tup1_p87res2);
+        var tup1_p87res3 = document.getElementById('tup1_p87res3').value;
+        localStorage.setItem('tup1_p87res3', tup1_p87res3);
+        var tup1_p87res4 = document.getElementById('tup1_p87res4').value;
+        localStorage.setItem('tup1_p87res4', tup1_p87res4);
+        var tup1_p87res5 = document.getElementById('tup1_p87res5').value;
+        localStorage.setItem('tup1_p87res5', tup1_p87res5);
+        var tup1_p87res6 = document.getElementById('tup1_p87res6').value;
+        localStorage.setItem('tup1_p87res6', tup1_p87res6);
+        var tup1_p87res7 = document.getElementById('tup1_p87res7').value;
+        localStorage.setItem('tup1_p87res7', tup1_p87res7);
+        var tup1_p87res8 = document.getElementById('tup1_p87res8').value;
+        localStorage.setItem('tup1_p87res8', tup1_p87res8);
+        var tup1_p87res9 = document.getElementById('tup1_p87res9').value;
+        localStorage.setItem('tup1_p87res9', tup1_p87res9);
+        var tup1_p87res10 = document.getElementById('tup1_p87res10').value;
+        localStorage.setItem('tup1_p87res10', tup1_p87res10);
+        var tup1_p87res11 = document.getElementById('tup1_p87res11').value;
+        localStorage.setItem('tup1_p87res11', tup1_p87res11);
+        var tup1_p87res12 = document.getElementById('tup1_p87res12').value;
+        localStorage.setItem('tup1_p87res12', tup1_p87res12);
+        var tup1_p87res13 = document.getElementById('tup1_p87res13').value;
+        localStorage.setItem('tup1_p87res13', tup1_p87res13);
+        var tup1_p87res14 = document.getElementById('tup1_p87res14').value;
+        localStorage.setItem('tup1_p87res14', tup1_p87res14);
+        var tup1_p87res15 = document.getElementById('tup1_p87res15').value;
+        localStorage.setItem('tup1_p87res15', tup1_p87res15);
+        var tup1_p87res16 = document.getElementById('tup1_p87res16').value;
+        localStorage.setItem('tup1_p87res16', tup1_p87res16);
+        var tup1_p87res17 = document.getElementById('tup1_p87res17').value;
+        localStorage.setItem('tup1_p87res17', tup1_p87res17);
+        var tup1_p87res18 = document.getElementById('tup1_p87res18').value;
+        localStorage.setItem('tup1_p87res18', tup1_p87res18);
+        var tup1_p87res19 = document.getElementById('tup1_p87res19').value;
+        localStorage.setItem('tup1_p87res19', tup1_p87res19);
+        var tup1_p87res20 = document.getElementById('tup1_p87res20').value;
+        localStorage.setItem('tup1_p87res20', tup1_p87res20);
+        var tup1_p87res21 = document.getElementById('tup1_p87res21').value;
+        localStorage.setItem('tup1_p87res21', tup1_p87res21);
+        var tup1_p87res22 = document.getElementById('tup1_p87res22').value;
+        localStorage.setItem('tup1_p87res22', tup1_p87res22);
+        var tup1_p87res23 = document.getElementById('tup1_p87res23').value;
+        localStorage.setItem('tup1_p87res23', tup1_p87res23);
+        var tup1_p87res24 = document.getElementById('tup1_p87res24').value;
+        localStorage.setItem('tup1_p87res24', tup1_p87res24);
+        var tup1_p87res25 = document.getElementById('tup1_p87res25').value;
+        localStorage.setItem('tup1_p87res25', tup1_p87res25);
+        var tup1_p87res26 = document.getElementById('tup1_p87res26').value;
+        localStorage.setItem('tup1_p87res26', tup1_p87res26);
+        
+
+        alert("Saved correctly");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>

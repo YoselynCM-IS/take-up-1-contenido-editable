@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/style.css?rnd=132">
+  
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img src ="bgimg/bg00001.jpg"/></nobr></div>
+      <p><span style="font-family:Helvetica;font-size:14.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 152px; left: 10px"><nobr>Student name (required) :<br>
+      <input type="text" id="tup1_regNA" size="40" tabindex=1></nobr></span></span></p>
+      <p><span style="font-family:Helvetica;font-size:14.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 250px; left: 12px"><nobr>Group (required): <br>
+      <input type="text" id="tup1_regGP" size="5" tabindex=3></nobr></span></span></p>
+      <p><span style="font-family:Helvetica;font-size:14.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 202px; left: 12px; width: 451px;"><nobr>E-mail (required) :<br>
+      <input type="text" id="tup1_regCA" size="40" tabindex=2></nobr></span></span></p>
+      <p><span style="font-family:Helvetica;font-size:14.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 315px; left: 10px; width: 442px; height: 20px;"><nobr>Teacher's name (required) :<br>
+      <input type="text" id="tup1_regND" size="40" tabindex=4></nobr></span></span></p>
+      <p><span style="font-family:Helvetica;font-size:14.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 379px; left: 10px"><nobr>Teacher's e-mail (required) :<br>
+      <input type="text" id="tup1_regCD" size="40" tabindex=5><br>
+      <br>
+      <input type="button" onClick="save_data()" value="Save"  class="btn btn-primary">
+      <br></nobr></span></span></p><p><span style="font-family:Helvetica;font-size:24.000000px;font-style:normal;font-weight:normal;color:#000000;"><span style="position: absolute; top: 118px; left: 8px"><nobr>Personal information </nobr></span></span></p>      
+    </div>
+
+</body>
+<script type="text/javascript">
+    //Cargar datos
+    document.getElementById('tup1_regNA').value = localStorage.getItem('tup1_regNA');
+    document.getElementById('tup1_regGP').value = localStorage.getItem('tup1_regGP');
+    document.getElementById('tup1_regCA').value = localStorage.getItem('tup1_regCA');
+    document.getElementById('tup1_regND').value = localStorage.getItem('tup1_regND');
+    document.getElementById('tup1_regCD').value = localStorage.getItem('tup1_regCD');
+    //fin cargar datos
+    function save_data(){
+
+        var tup1_regNA = document.getElementById('tup1_regNA').value;
+        localStorage.setItem('tup1_regNA', tup1_regNA);
+        var tup1_regGP = document.getElementById('tup1_regGP').value;
+        localStorage.setItem('tup1_regGP', tup1_regGP);
+        var tup1_regND = document.getElementById('tup1_regND').value;
+        localStorage.setItem('tup1_regND', tup1_regND);
+        var tup1_regCA = document.getElementById('tup1_regCA').value;
+        localStorage.setItem('tup1_regCA', tup1_regCA);
+        var tup1_regCD = document.getElementById('tup1_regCD').value;
+        localStorage.setItem('tup1_regCD', tup1_regCD);
+
+        alert("Saved correctly");
+    }
+</script>
+</html> 

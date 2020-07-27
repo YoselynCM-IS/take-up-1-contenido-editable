@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        <span style="position: absolute; top: 680px; left: 262px">
+			<textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res1"></textarea>
+		</span>
+	  <span style="position: absolute; top: 701px; left: 263px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res2"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 743px; left: 264px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res3"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 763px; left: 263px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res4"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 785px; left: 262px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res5"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 806px; left: 264px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res6"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 827px; left: 263px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res7"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 848px; left: 265px">
+	  <textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res8"></textarea>
+	  </span>
+		<span style="position: absolute; top: 869px; left: 264px">
+			<textarea rows = "1" cols = "15" maxlength = "15" id="tup1_p63res9"></textarea>
+		</span>
+		
+		<span style="position: absolute; top: 732px; left: 547px">
+			<textarea rows = "1" cols = "10" maxlength = "10" id="tup1_p63res10"></textarea>
+		</span>
+	  <span style="position: absolute; top: 774px; left: 670px">
+	  <textarea rows = "1" cols = "10" maxlength = "10" id="tup1_p63res11"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 795px; left: 683px">
+	  <textarea rows = "1" cols = "10" maxlength = "10" id="tup1_p63res12"></textarea>
+	  </span>
+	  <span style="position: absolute; top: 838px; left: 565px">
+	  <textarea rows = "1" cols = "10" maxlength = "10" id="tup1_p63res13"></textarea>
+	  </span>
+		<span style="position: absolute; top: 880px; left: 526px">
+			<textarea rows = "1" cols = "10" maxlength = "10" id="tup1_p63res14"></textarea>
+		</span>
+		
+		<span style="position: absolute; top: 174px; left: 471px">
+			<input type="checkbox" id="tup1_p63res15">
+		</span>
+	  <span style="position: absolute; top: 278px; left: 472px">
+			<input type="checkbox" id="tup1_p63res16">
+	  </span>
+	  <span style="position: absolute; top: 387px; left: 474px">
+			<input type="checkbox" id="tup1_p63res17">
+	  </span>
+	  <span style="position: absolute; top: 491px; left: 474px">
+			<input type="checkbox" id="tup1_p63res18">
+	  </span>
+		<span style="position: absolute; top: 596px; left: 473px">
+			<input type="checkbox" id="tup1_p63res19">
+		</span>
+		
+	  <div id="tup1_p63res20-zone" style="position: absolute; top: 150px; left: 99px; width: 335px; height: 300px;">
+			<img id="tup1_p63res20" src="bgimg/01.jpg" height="299" width="333"> 
+		</div>
+		
+	  <script type="text/javascript">
+			var tup1_p63res20 = document.getElementById('tup1_p63res20');
+			if (localStorage.getItem("Img_tup1_p63res20") === null) {
+				var dataImage = "bgimg/01.jpg"
+			}
+			else {
+				var dataImage = localStorage.getItem('Img_tup1_p63res20');
+			}
+			tup1_p63res20.src = dataImage;
+			var previewZone = document.getElementById('tup1_p63res20-zone');
+			previewZone.appendChild(tup1_p63res20);
+		</script>
+
+		<div id="divFileUpload" style="position: absolute; top: 456px; left: 159px">
+			<input class="btn btn-primary" id="file-upload" type="file" accept="image/*" />
+		</div>
+
+		
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1030px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Save"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Send" class="btn btn-primary"> 
+			<input type="hidden" id="tup1_regNA" name="tup1_regNA">
+			<input type="hidden" id="tup1_regGP" name="tup1_regGP">
+			<input type="hidden" id="tup1_regCA" name="tup1_regCA">
+			<input type="hidden" id="tup1_regND" name="tup1_regND">
+			<input type="hidden" id="tup1_regCD" name="tup1_regCD">
+	  </form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1020px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script>
+    function readFile(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+     
+            reader.onload = function (e) {
+                var tup1_p63res20 = document.getElementById('tup1_p63res20');
+                //e.target.result contents the base64 data from the image uploaded
+                tup1_p63res20.src = e.target.result;
+                console.log(e.target.result);
+     
+                var previewZone = document.getElementById('tup1_p63res20-zone');
+                previewZone.appendChild(tup1_p63res20);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    var fileUpload = document.getElementById('file-upload');
+    fileUpload.onchange = function (e) {
+        //document.getElementById('file-preview-zone').innerHTML = "";
+        readFile(e.srcElement);
+    }
+     
+</script>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('tup1_regNA').value = localStorage.getItem('tup1_regNA');
+    document.getElementById('tup1_regGP').value = localStorage.getItem('tup1_regGP');
+    document.getElementById('tup1_regCA').value = localStorage.getItem('tup1_regCA');
+    document.getElementById('tup1_regND').value = localStorage.getItem('tup1_regND');
+    document.getElementById('tup1_regCD').value = localStorage.getItem('tup1_regCD');
+
+	 document.getElementById('tup1_p63res1').value = localStorage.getItem('tup1_p63res1');
+    document.getElementById('tup1_p63res2').value = localStorage.getItem('tup1_p63res2');
+    document.getElementById('tup1_p63res3').value = localStorage.getItem('tup1_p63res3');
+    document.getElementById('tup1_p63res4').value = localStorage.getItem('tup1_p63res4');
+    document.getElementById('tup1_p63res5').value = localStorage.getItem('tup1_p63res5');
+    document.getElementById('tup1_p63res6').value = localStorage.getItem('tup1_p63res6');
+    document.getElementById('tup1_p63res7').value = localStorage.getItem('tup1_p63res7');
+    document.getElementById('tup1_p63res8').value = localStorage.getItem('tup1_p63res8');
+    document.getElementById('tup1_p63res9').value = localStorage.getItem('tup1_p63res9');
+    document.getElementById('tup1_p63res10').value = localStorage.getItem('tup1_p63res10');
+    document.getElementById('tup1_p63res11').value = localStorage.getItem('tup1_p63res11');
+    document.getElementById('tup1_p63res12').value = localStorage.getItem('tup1_p63res12');
+    document.getElementById('tup1_p63res13').value = localStorage.getItem('tup1_p63res13');
+    document.getElementById('tup1_p63res14').value = localStorage.getItem('tup1_p63res14');
+    document.getElementById('tup1_p63res15').value = localStorage.getItem('tup1_p63res15');
+     // ** INICIO ACTIVACION CHECKBOK ** //
+    if(document.getElementById('tup1_p63res15').value == "1")
+        document.getElementById("tup1_p63res15").checked = true; 
+
+    document.getElementById('tup1_p63res16').value = localStorage.getItem('tup1_p63res16');
+     // ** INICIO ACTIVACION CHECKBOK ** //
+    if(document.getElementById('tup1_p63res16').value == "1")
+        document.getElementById("tup1_p63res16").checked = true; 
+
+    document.getElementById('tup1_p63res17').value = localStorage.getItem('tup1_p63res17');
+     // ** INICIO ACTIVACION CHECKBOK ** //
+    if(document.getElementById('tup1_p63res17').value == "1")
+        document.getElementById("tup1_p63res17").checked = true; 
+
+    document.getElementById('tup1_p63res18').value = localStorage.getItem('tup1_p63res18');
+     // ** INICIO ACTIVACION CHECKBOK ** //
+    if(document.getElementById('tup1_p63res18').value == "1")
+        document.getElementById("tup1_p63res18").checked = true; 
+
+    document.getElementById('tup1_p63res19').value = localStorage.getItem('tup1_p63res19');
+    // ** INICIO ACTIVACION CHECKBOK ** //
+    //comprobar si el valor es 1 se selecciona 
+    if(document.getElementById('tup1_p63res19').value == "1")
+        document.getElementById("tup1_p63res19").checked = true; // si es uno se activa en checkbox
+    // ** FIN ACTIVACION CHECKBOK ** //
+    
+
+    function save_data(){
+		//local storage
+        bannerImage = document.getElementById('tup1_p63res20').src;
+        localStorage.setItem("Img_tup1_p63res20", bannerImage);
+		
+        var tup1_p63res1 = document.getElementById('tup1_p63res1').value;
+        localStorage.setItem('tup1_p63res1', tup1_p63res1);
+        var tup1_p63res2 = document.getElementById('tup1_p63res2').value;
+        localStorage.setItem('tup1_p63res2', tup1_p63res2);
+        var tup1_p63res3 = document.getElementById('tup1_p63res3').value;
+        localStorage.setItem('tup1_p63res3', tup1_p63res3);
+        var tup1_p63res4 = document.getElementById('tup1_p63res4').value;
+        localStorage.setItem('tup1_p63res4', tup1_p63res4);
+        var tup1_p63res5 = document.getElementById('tup1_p63res5').value;
+        localStorage.setItem('tup1_p63res5', tup1_p63res5);
+        var tup1_p63res6 = document.getElementById('tup1_p63res6').value;
+        localStorage.setItem('tup1_p63res6', tup1_p63res6);
+        var tup1_p63res7 = document.getElementById('tup1_p63res7').value;
+        localStorage.setItem('tup1_p63res7', tup1_p63res7);
+        var tup1_p63res8 = document.getElementById('tup1_p63res8').value;
+        localStorage.setItem('tup1_p63res8', tup1_p63res8);
+        var tup1_p63res9 = document.getElementById('tup1_p63res9').value;
+        localStorage.setItem('tup1_p63res9', tup1_p63res9);
+        var tup1_p63res10 = document.getElementById('tup1_p63res10').value;
+        localStorage.setItem('tup1_p63res10', tup1_p63res10);
+        var tup1_p63res11 = document.getElementById('tup1_p63res11').value;
+        localStorage.setItem('tup1_p63res11', tup1_p63res11);
+        var tup1_p63res12 = document.getElementById('tup1_p63res12').value;
+        localStorage.setItem('tup1_p63res12', tup1_p63res12);
+        var tup1_p63res13 = document.getElementById('tup1_p63res13').value;
+        localStorage.setItem('tup1_p63res13', tup1_p63res13);
+        var tup1_p63res14 = document.getElementById('tup1_p63res14').value;
+        localStorage.setItem('tup1_p63res14', tup1_p63res14);
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('tup1_p63res15').checked;
+        if(isChecked){
+            var tup1_p63res15 = "1";
+        }    
+        localStorage.setItem('tup1_p63res15', tup1_p63res15);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('tup1_p63res16').checked;
+        if(isChecked){
+            var tup1_p63res16 = "1";
+        }    
+        localStorage.setItem('tup1_p63res16', tup1_p63res16);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('tup1_p63res17').checked;
+        if(isChecked){
+            var tup1_p63res17 = "1";
+        }    
+        localStorage.setItem('tup1_p63res17', tup1_p63res17);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('tup1_p63res18').checked;
+        if(isChecked){
+            var tup1_p63res18 = "1";
+        }    
+        localStorage.setItem('tup1_p63res18', tup1_p63res18);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('tup1_p63res19').checked;
+        if(isChecked){
+            var tup1_p63res19 = "1";
+        }
+        localStorage.setItem('tup1_p63res19', tup1_p63res19);
+        //** FIN PARA GUARDAR CHECKBOX **//
+        
+
+        alert("Saved correctly");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>
